@@ -1,2 +1,3 @@
-# fatfree-admin
-Web interface for the Fat Free Framework
+# Fat-Free Admin
+
+Web interface for the [Fat-Free Framework](https://github.com/bcosca/fatfree)
