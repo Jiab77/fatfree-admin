@@ -5,6 +5,12 @@ $f3 = require __DIR__ . '/framework/fatfree/lib/base.php';
 // Load JSON configuration
 $app_config = require __DIR__ . '/config/loader.php';
 
+// Check if JSON configuration has been loaded correctly
+// TODO: Use the F3 error handler
+if ($app_config === false) {
+    die('Unable to load JSON configuration.');
+}
+
 // Add JSON configuration to the F3 memory space
 $f3->set('APP_CONFIG', $app_config);
 
