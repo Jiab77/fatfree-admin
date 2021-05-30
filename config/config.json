@@ -1,0 +1,16 @@
+{
+    "cache": {
+        "enabled": true,
+        "path": "/dev/shm/fatfree-admin/"
+    },
+    "debug": true,
+    "framework": "framework/fatfree",
+    "layout": "./ui",
+    "project": {
+        "description": "A modern web interface for Fat-Free Framework.",
+        "display_name": "Fat-Free Admin",
+        "name": "fatfree-admin",
+        "url": "https://github.com/Jiab77/fatfree-admin",
+        "version": "0.0.0"
+    }
+}
