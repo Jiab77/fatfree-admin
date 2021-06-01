@@ -1,0 +1,17 @@
+{
+    "cache": {
+        "enabled": true,
+        "path": "/dev/shm/your-project-name-here"
+    },
+    "debug": true,
+    "framework": "framework/fatfree",
+    "layout": "./ui",
+    "plugins": "./plugins",
+    "project": {
+        "description": "your-project-tag-line-here",
+        "display_name": "your-project-display-name-here",
+        "name": "your-project-name-here",
+        "url": "https://github.com/your-name-here/your-project-name-here",
+        "version": "0.0.0"
+    }
+}
