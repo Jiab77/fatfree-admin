@@ -1,7 +1,4 @@
 <?php
-// Load F3
-$f3 = require __DIR__ . '/framework/fatfree/lib/base.php';
-
 // Load JSON configuration
 $app_config = require __DIR__ . '/config/loader.php';
 
@@ -10,6 +7,9 @@ $app_config = require __DIR__ . '/config/loader.php';
 if ($app_config === false) {
     die('Unable to load JSON configuration.');
 }
+
+// Load F3
+$f3 = require __DIR__ . '/' . $app_config->framework . '/lib/base.php';
 
 // Add JSON configuration to the F3 memory space
 $f3->set('APP_CONFIG', $app_config);
@@ -23,11 +23,11 @@ if ($f3->get('APP_CONFIG')->debug === true) {
 if ($f3->get('APP_CONFIG')->cache->enabled === true) {
     // Create 'tmp' and 'cache' folders if not already exist
     if (!is_dir($f3->get('APP_CONFIG')->cache->path)) {
-        mkdir($f3->get('APP_CONFIG')->cache->path . 'cache/', 0777, true);
-        mkdir($f3->get('APP_CONFIG')->cache->path . 'tmp/', 0777, true);
+        mkdir($f3->get('APP_CONFIG')->cache->path . '/cache/', 0777, true);
+        mkdir($f3->get('APP_CONFIG')->cache->path . '/tmp/', 0777, true);
     }
-    $f3->set('CACHE', 'folder=' . $f3->get('APP_CONFIG')->cache->path . 'cache/');
-    $f3->set('TEMP', $f3->get('APP_CONFIG')->cache->path . 'tmp/');
+    $f3->set('CACHE', 'folder=' . $f3->get('APP_CONFIG')->cache->path . '/cache/');
+    $f3->set('TEMP', $f3->get('APP_CONFIG')->cache->path . '/tmp/');
 }
 
 // Set routes
@@ -44,7 +44,7 @@ $f3->route('GET /',
         $f3->set('APP_YEAR', date("Y"));
 
         // Render 'index' template
-        echo Template::instance()->render($f3->get('APP_CONFIG')->layout . '/index.html');
+        echo Template::instance()->render($f3->get('APP_CONFIG')->layout . '/framework.html');
     }
 );
 
