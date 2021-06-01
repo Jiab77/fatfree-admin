@@ -181,6 +181,10 @@
 										<td>UI</td>
 										<td>{{ realpath(@APP_CONFIG->layout) }}</td>
 									</tr>
+									<tr>
+										<td>Plugins</td>
+										<td>{{ realpath(@APP_CONFIG->plugins) }}</td>
+									</tr>
 								</tbody>
 							</table>
 							<table class="ui celled table">
@@ -261,7 +265,7 @@
 								<td>{{ @CACHE }}</td>
 							</tr>
 							<tr>
-								<td>Debug Level</td>
+								<td>Debug</td>
 								<td>{{ @DEBUG }}</td>
 							</tr>
 							<tr>
@@ -269,11 +273,11 @@
 								<td>{{ @ENCODING }}</td>
 							</tr>
 							<tr>
-								<td>Plugins Path</td>
+								<td>Plugins</td>
 								<td>{{ @PLUGINS }}</td>
 							</tr>
 							<tr>
-								<td>Temp Folder</td>
+								<td>Temp</td>
 								<td>{{ @TEMP }}</td>
 							</tr>
 							<tr>
