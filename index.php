@@ -43,7 +43,7 @@ $f3->route('GET /',
         $f3->set('APP_JS', $f3->get('APP_CONFIG')->layout . '/js');
         $f3->set('APP_YEAR', date("Y"));
 
-        // Render 'index' template
+        // Render 'framework' template
         echo Template::instance()->render($f3->get('APP_CONFIG')->layout . '/framework.html');
     }
 );
