@@ -1,11 +1,12 @@
 {
     "cache": {
         "enabled": true,
-        "path": "/dev/shm/fatfree-admin/"
+        "path": "/dev/shm/fatfree-admin"
     },
     "debug": true,
     "framework": "framework/fatfree",
     "layout": "./ui",
+    "plugins": "./plugins",
     "project": {
         "description": "A modern web interface for Fat-Free Framework.",
         "display_name": "Fat-Free Admin",
