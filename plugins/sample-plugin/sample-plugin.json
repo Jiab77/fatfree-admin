@@ -5,7 +5,7 @@
         "description": "Sample plugin for the Fat-Free Admin project.",
         "display_name": "Sample Plugin",
         "name": "sample-plugin",
-        "url": "",
+        "url": "https://github.com/Jiab77/fatfree-admin",
         "version": "0.0.0"
     },
     "routes": [
