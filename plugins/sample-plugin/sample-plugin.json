@@ -4,6 +4,7 @@
     "details": {
         "description": "Sample plugin for the Fat-Free Admin project.",
         "display_name": "Sample Plugin",
+        "icon": "f3_fav_32.ico",
         "name": "sample-plugin",
         "url": "https://github.com/Jiab77/fatfree-admin",
         "version": "0.0.0"

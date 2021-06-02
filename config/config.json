@@ -10,6 +10,7 @@
     "project": {
         "description": "A modern web interface for Fat-Free Framework.",
         "display_name": "Fat-Free Admin",
+        "icon": "f3_fav_32.ico",
         "name": "fatfree-admin",
         "url": "https://github.com/Jiab77/fatfree-admin",
         "version": "0.0.0"

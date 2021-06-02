@@ -37,6 +37,7 @@ $f3->route('GET /',
         $f3->set('APP_HELP', $f3->get('APP_CONFIG')->framework);
         $f3->set('APP_NAME', $f3->get('APP_CONFIG')->project->display_name);
         $f3->set('APP_DESC', $f3->get('APP_CONFIG')->project->description);
+        $f3->set('APP_ICON', $f3->get('APP_CONFIG')->project->icon);
         $f3->set('APP_URL', $f3->get('APP_CONFIG')->project->url);
         $f3->set('APP_CSS', $f3->get('APP_CONFIG')->layout . '/css');
         $f3->set('APP_IMG', $f3->get('APP_CONFIG')->layout . '/img');
@@ -83,6 +84,7 @@ if (count(glob(realpath($f3->get('APP_CONFIG')->plugins) . '/*/*.json')) > 0) {
                     $f3->set('PLUGIN_CONFIG', $found_plugin);
                     $f3->set('PLUGIN_NAME', $found_plugin->details->display_name);
                     $f3->set('PLUGIN_DESC', $found_plugin->details->description);
+                    $f3->set('PLUGIN_ICON', $found_plugin->details->icon);
                     $f3->set('PLUGIN_URL', $found_plugin->details->url);
                     $f3->set('PLUGIN_HELP', $f3->get('APP_CONFIG')->framework);
                     $f3->set('PLUGIN_CSS', $f3->get('APP_CONFIG')->layout . '/css');
