@@ -1,0 +1,19 @@
+{
+    "debug": true,
+    "enabled": true,
+    "details": {
+        "description": "Sample plugin for the Fat-Free Admin project.",
+        "display_name": "Sample Plugin",
+        "name": "sample-plugin",
+        "url": "",
+        "version": "0.0.0"
+    },
+    "routes": [
+        {
+            "method": "GET",
+            "name": "/sample-plugin/test",
+            "params": true,
+            "resource": "sample-plugin.php"
+        }
+    ]
+}
